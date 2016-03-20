@@ -1,0 +1,18 @@
+.drop-list {
+    position: relative;
+}
+
+.drop-list .label {
+    width: 168px;
+}
+
+.drop-list .list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.drop-list .list:hover {
+    display: block;
+}

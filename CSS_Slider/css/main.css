@@ -1,0 +1,163 @@
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+}
+
+.slider > ul {
+    position: relative;
+    width: 1000px;
+    height: 200px;
+    left: 0;
+    transition: left 1s;
+}
+
+.slider > ul > li {
+    float: left;
+}
+
+.slider > ul > li > img {
+    vertical-align: middle;
+}
+
+.slider .prev,
+.slider .next,
+.slider .point {
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: #FFF;
+    opacity: 0.5;
+    position: absolute;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    z-index: 2;
+}
+
+.slider .prev,
+.slider .next {
+    top: 90px;
+    display: none;
+    opacity: 1;
+}
+
+.slider .prev {
+    left: 0;
+}
+
+.slider .next {
+    right: 0;
+}
+
+.slider .point {
+    top: 180px;
+    line-height: 26px;
+}
+
+.slider .point:hover {
+    opacity: 1;
+}
+
+.slider .point.first {
+    left: 50px;
+}
+
+.slider .point.first + * {
+    left: 70px;
+}
+
+.slider .point.first + * + * {
+    left: 90px;
+}
+
+.slider .point.first + * + * + * {
+    left: 110px;
+}
+
+.slider .point.first + * + * + * + * {
+    left: 130px;
+}
+
+.slider .point.first:focus ~ ul {
+    left: 0;
+}
+
+.slider .point.first + *:focus ~ ul {
+    left: -200px;
+}
+
+.slider .point.first + * + *:focus ~ ul {
+    left: -400px;
+}
+
+.slider .point.first + * + * + *:focus ~ ul {
+    left: -600px;
+}
+
+.slider .point.first + * + * + * + *:focus ~ ul {
+    left: -800px;
+}
+
+.slider .point.first:focus ~ .next.first,
+.slider .point.first + *:focus ~ .next.first + *,
+.slider .point.first + * + *:focus ~ .next.first + * + *,
+.slider .point.first + * + * + *:focus ~ .next.first + * + * + *,
+.slider .point.first + * + * + * + *:focus ~ .next.first + * + * + * + * {
+    display: block;
+    z-index: 3;
+}
+
+.slider .point.first:focus,
+.slider .point.first + *:focus,
+.slider .point.first + * + *:focus,
+.slider .point.first + * + * + *:focus,
+.slider .point.first + * + * + * + *:focus {
+    opacity: 1;
+}
+
+.slider .next.first {
+    display: block;
+}
+
+.slider .next.first:focus + *,
+.slider .next.first + *:focus + *,
+.slider .next.first + * + *:focus + *,
+.slider .next.first + * + * + *:focus + *,
+.slider .next.first + *:hover,
+.slider .next.first + * + *:hover,
+.slider .next.first + * + * + *:hover {
+    display: block;
+    z-index: 3;
+}
+
+.slider .next:not(.first) {
+    z-index: -1;
+}
+
+.slider .next.first:focus ~ ul {
+    left: -200px;
+}
+
+.slider .next.first + *:focus ~ ul {
+    left: -400px;
+}
+
+.slider .next.first + * + *:focus ~ ul {
+    left: -600px;
+}
+
+.slider .next.first + * + * + *:focus ~ ul {
+    left: -800px;
+}
+
+.slider .next.first + * + * + * + *:focus ~ ul {
+    left: 0;
+}

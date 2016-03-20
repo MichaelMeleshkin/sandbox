@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="./../style/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./../style/main.css" />
+</head>
+<body>
+<div>
+    <h4 class="bold m-bottom10">Inline:</h4>
+    <span class="m20 bc-blue">Margin</span>
+    <span class="p20 bc-blue">Padding</span>
+
+    <div style="display: none">
+        <br>
+        <br>
+        <span class="m20 bc-blue">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Fusce vitae tincidunt leo, vitae vulputate est.
+            Ut ac velit interdum metus ultricies dapibus sit amet quis arcu.
+            Pellentesque iaculis mi vel lacus hendrerit, vitae lobortis enim tincidunt.
+        </span>
+        <br>
+        <br>
+        <br>
+        <span class="p20 bc-blue">
+            In tristique sagittis tellus quis condimentum.
+            Integer tempor semper magna, et molestie magna imperdiet eu.
+            Sed varius porttitor augue a lacinia. Integer dignissim ipsum purus, eu volutpat ex accumsan tempus.
+            Quisque mi risus, tincidunt in fermentum sit amet, consectetur nec ante.
+        </span>
+    </div>
+
+    <div class="inline-block w-max">
+        <h4 class="bold m-bottom10 m-top30">Inline-block:</h4>
+        <span class="inline-block m20 bc-yellow">Margin</span>
+        <span class="inline-block p20 bc-yellow">Padding</span>
+    </div>
+
+    <h4 class="bold m-top10">Block:</h4>
+    <div class="p20 bc-green">Padding</div>
+    <p class="m-top30">Collapsing Margins:</p>
+    <div class="h50 m20 bc-red"></div>
+    <div class="h50 m20 bc-blue">
+        <div class="h50 m30 bc-green"></div>
+    </div>
+    <br/>
+</div>
+<div>
+    <p>Collapsing does not work:</p>
+    <div>
+        <div class="inline-block m10 border bc-red">
+            <!--inline-block-->
+            <div class="h50 w200 bc-green m10"></div>
+        </div>
+    </div>
+    <div class="relative">
+        <div class="absolute m10 p10 bc-blue">
+            <!--absolute-->
+            <div class="h50 w200 bc-yellow m10"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

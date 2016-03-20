@@ -1,0 +1,19 @@
+.inline-block-table > li {
+    display: inline-block;
+}
+
+.inline-block-table > li.text1 {
+    width: 200px;
+}
+
+.inline-block-table > li.text2 {
+    width: 100px;
+}
+
+.inline-block-table.negative-margin > li {
+    margin-right: -4px;
+}
+
+@media screen and (max-width: 600px), screen and (max-device-width: 600px) {
+
+}

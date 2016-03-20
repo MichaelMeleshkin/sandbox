@@ -1,0 +1,18 @@
+.table {
+    display: table;
+    width: 100%;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px), screen and (max-device-width: 600px) {
+    .top {
+        display: table-header-group;
+    }
+
+    .bottom {
+        display: table-footer-group;
+    }
+}

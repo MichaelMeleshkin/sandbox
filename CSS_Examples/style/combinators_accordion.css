@@ -1,0 +1,15 @@
+.accordion .label {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.accordion .label:focus {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom: none;
+}
+
+.accordion .label:focus + .list {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}

@@ -1,0 +1,107 @@
+.frame-wrap {
+    position: relative;
+    padding: 5px 6px 2px 10px;
+}
+
+.frame-wrap .textarea {
+    border: none;
+    height: 100px;
+    width: 200px;
+    background: transparent;
+}
+
+.frame-wrap .lt,
+.frame-wrap .lb,
+.frame-wrap .rt,
+.frame-wrap .rb,
+.frame-wrap .gt,
+.frame-wrap .gb,
+.frame-wrap .vl,
+.frame-wrap .vr {
+    position: absolute;
+    z-index: -1;
+}
+
+.frame-wrap .lt {
+    left: 0;
+    top: 0;
+}
+
+.frame-wrap .lb {
+    left: 0;
+    bottom: 0;
+}
+
+.frame-wrap .rt {
+    right: 0;
+    top: 0;
+}
+
+.frame-wrap .rb {
+    right: 0;
+    bottom: 0;
+}
+
+.frame-wrap .lt,
+.frame-wrap .lb,
+.frame-wrap .rt,
+.frame-wrap .rb {
+    height: 18px;
+    width: 18px;
+}
+
+.frame-wrap .lt {
+    background: transparent url("./../images/frame/lt.png") left top no-repeat;
+}
+
+.frame-wrap .lb {
+    background: transparent url("./../images/frame/lb.png") left top no-repeat;
+}
+
+.frame-wrap .rt {
+    background: transparent url("./../images/frame/rt.png") left top no-repeat;
+}
+
+.frame-wrap .rb {
+    background: transparent url("./../images/frame/rb.png") left top no-repeat;
+}
+
+.frame-wrap .gt,
+.frame-wrap .gb {
+    height: 15px;
+    background: transparent url("./../images/frame/g.png") left top repeat-x;
+}
+
+.frame-wrap .gt {
+    top: -3px;
+    left: 19px;
+    right: 19px;
+}
+
+.frame-wrap .gb {
+    bottom: -3px;
+    left: 19px;
+    right: 18px;
+}
+
+.frame-wrap .vl,
+.frame-wrap .vr {
+    width: 9px;
+    background: transparent url("./../images/frame/v.png") left top repeat-y;
+}
+
+.frame-wrap .vl {
+    top: 19px;
+    bottom: 18px;
+    left: 0;
+}
+
+.frame-wrap .vr {
+    top: 19px;
+    bottom: 18px;
+    right: 0;
+}
+
+@media screen and (max-width: 600px), screen and (max-device-width: 600px) {
+
+}

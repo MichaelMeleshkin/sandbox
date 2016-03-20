@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="./../style/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./../style/main.css" />
+        <style type="text/css">
+            .image-list {
+                width: 315px;
+            }
+
+            .image-list > li {
+                float: left;
+                border: 1px solid #000;
+            }
+
+            .image-list > li img {
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <h4 class="bold m-bottom10">Standard behavior:</h4>
+        <div>
+            <img src="http://lorempixel.com/200/200/" alt="lorempixel.com">
+            <div class="p10 bc-yellow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum leo at gravida tristique. Integer egestas iaculis elit, in sollicitudin justo. Aenean lacinia nunc et mauris maximus, sit amet pellentesque dolor ultricies. Aenean volutpat porttitor nisl, quis mattis urna ultricies at. Cras elementum ante ut libero rutrum, non auctor nunc volutpat. Vivamus lobortis tincidunt nulla eu hendrerit. Morbi ac nisi nunc. Mauris ac risus ac nibh dignissim dignissim. Nulla ante risus, aliquet placerat tempus nec, tristique non ipsum. Aenean eu lectus eros.</div>
+            <div class="p10 bc-yellow">Aliquam ac felis magna. Phasellus sed nisi ac lectus rutrum pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ullamcorper quis nulla eu ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum auctor posuere ante vitae mattis. Vestibulum libero sapien, varius faucibus congue in, pulvinar in est. Vivamus sit amet erat facilisis, gravida magna non, auctor quam. Vestibulum mattis lacus nunc, quis dapibus odio tristique ac. Etiam eget tortor faucibus, blandit lectus non, rhoncus lacus. Sed porttitor felis nec metus dapibus finibus. Aliquam vitae sodales nibh, et rutrum ipsum. Phasellus tempus, nisi at interdum posuere, purus enim faucibus odio, vel accumsan justo erat non est. Pellentesque sit amet pulvinar lectus. Aenean ultricies sem purus, sed viverra elit eleifend a.</div>
+        </div>
+
+        <h4 class="bold m-bottom10 m-top20">Float left:</h4>
+        <div class="clearfix">
+            <img class="left m20" src="http://lorempixel.com/200/200/" alt="lorempixel.com">
+            <div class="p10 bc-yellow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum leo at gravida tristique. Integer egestas iaculis elit, in sollicitudin justo. Aenean lacinia nunc et mauris maximus, sit amet pellentesque dolor ultricies. Aenean volutpat porttitor nisl, quis mattis urna ultricies at. Cras elementum ante ut libero rutrum, non auctor nunc volutpat. Vivamus lobortis tincidunt nulla eu hendrerit. Morbi ac nisi nunc. Mauris ac risus ac nibh dignissim dignissim. Nulla ante risus, aliquet placerat tempus nec, tristique non ipsum. Aenean eu lectus eros.</div>
+        </div>
+
+        <h4 class="bold m-bottom10 m-top20">Float right:</h4>
+        <div class="clearfix">
+            <img class="right m20" src="http://lorempixel.com/200/200/" alt="lorempixel.com">
+            <div class="p10 bc-yellow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum leo at gravida tristique. Integer egestas iaculis elit, in sollicitudin justo. Aenean lacinia nunc et mauris maximus, sit amet pellentesque dolor ultricies. Aenean volutpat porttitor nisl, quis mattis urna ultricies at. Cras elementum ante ut libero rutrum, non auctor nunc volutpat. Vivamus lobortis tincidunt nulla eu hendrerit. Morbi ac nisi nunc. Mauris ac risus ac nibh dignissim dignissim. Nulla ante risus, aliquet placerat tempus nec, tristique non ipsum. Aenean eu lectus eros.</div>
+            <div class="p10 bc-yellow">Aliquam ac felis magna. Phasellus sed nisi ac lectus rutrum pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ullamcorper quis nulla eu ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum auctor posuere ante vitae mattis. Vestibulum libero sapien, varius faucibus congue in, pulvinar in est. Vivamus sit amet erat facilisis, gravida magna non, auctor quam. Vestibulum mattis lacus nunc, quis dapibus odio tristique ac. Etiam eget tortor faucibus, blandit lectus non, rhoncus lacus. Sed porttitor felis nec metus dapibus finibus. Aliquam vitae sodales nibh, et rutrum ipsum. Phasellus tempus, nisi at interdum posuere, purus enim faucibus odio, vel accumsan justo erat non est. Pellentesque sit amet pulvinar lectus. Aenean ultricies sem purus, sed viverra elit eleifend a.</div>
+            <div class="p10 bc-yellow">Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut aliquam mauris eu ligula condimentum, vitae lacinia sapien scelerisque. Donec non odio nulla. Nullam imperdiet quam justo, sit amet convallis orci lobortis nec. Sed tempus pulvinar tellus, nec ullamcorper lacus rutrum et. Donec dapibus ipsum justo, vitae egestas nunc auctor eget. Mauris sed neque tristique eros convallis elementum eu in urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque varius felis ex, pulvinar ultricies arcu lacinia ornare. Integer maximus mi in orci laoreet, vitae elementum libero rutrum. Etiam finibus ac nisl id placerat.</div>
+        </div>
+
+        <h4 class="bold m-bottom10 m-top20">Images have different height</h4>
+        <ul class="image-list clearfix">
+            <li><img src="http://placehold.it/100x100&text=1"/></li>
+            <li><img src="http://placehold.it/100x120&text=2"/></li>
+            <li><img src="http://placehold.it/100x110&text=3"/></li>
+            <li><img src="http://placehold.it/100x100&text=4"/></li>
+            <li><img src="http://placehold.it/100x100&text=5"/></li>
+            <li><img src="http://placehold.it/100x140&text=6"/></li>
+            <li><img src="http://placehold.it/100x100&text=7"/></li>
+        </ul>
+    </body>
+</html>

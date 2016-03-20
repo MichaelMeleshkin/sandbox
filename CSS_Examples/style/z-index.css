@@ -1,0 +1,114 @@
+.relative {
+    position: relative;
+    white-space: nowrap;
+}
+
+.abs {
+    position: absolute;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.z-2 {
+    z-index: 2;
+}
+
+.z-3 {
+    z-index: 3;
+}
+
+.z-4 {
+    z-index: 4;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.z-30 {
+    z-index: 30;
+}
+
+.z-40 {
+    z-index: 40;
+}
+
+.z-9999 {
+    z-index: 9999;
+}
+
+.p75 {
+    padding: 75px;
+}
+
+.p25 {
+    padding: 25px;
+}
+
+.left0 {
+    left: 0;
+}
+
+.right0 {
+    right: 0;
+}
+
+.top0 {
+    top: 0;
+}
+
+.bottom0 {
+    bottom: 0;
+}
+
+.child1,
+.child2,
+.child3,
+.child4 {
+    right: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.child1 {
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.child2 {
+    left: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.child3 {
+    left: -40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.child4 {
+    left: 60px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.last {
+    width: 230px;
+    margin-bottom: 130px;
+}
+
+.last .child3 {
+    left: 50px;
+}
+
+.last .child4 {
+    left: 140px;
+}

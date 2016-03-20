@@ -1,0 +1,29 @@
+.t-ellipsis {
+    text-overflow: ellipsis;
+}
+
+.ws-nowrap {
+    white-space: nowrap;
+}
+
+.couple-rows .t-ellipsis {
+    height: 48px; /*3 rows (16px line-height)*/
+    width: 450px;
+}
+
+.couple-rows .t-ellipsis:before {
+    content: "\00a0 ";
+    width: 50px;
+    line-height: 2;
+    float: right;
+}
+
+.couple-rows.height-auto .t-ellipsis {
+    height: auto;
+    width: 40400px;
+}
+
+.couple-rows.height-auto .t-ellipsis:before {
+    line-height: 4; /*if you change line-height you can to see the result*/
+    width: 40000px;
+}

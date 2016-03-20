@@ -1,0 +1,58 @@
+.line-height100 {
+    line-height: 100px;
+}
+
+.line-height16 {
+    line-height: 16px;
+}
+
+.ex-relative-margin {
+    height: 300px;
+    width: 300px;
+}
+
+.ex-relative-margin .abs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+}
+
+.ex-relative {
+    height: 300px;
+}
+
+.ex-relative .abs {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+}
+
+.ex-float {
+    height: 100px;
+    width: 300px;
+}
+
+.float {
+    float: left;
+    height: 50%;
+    width: 100%;
+    margin-bottom: -25px;
+}
+
+.content {
+    clear: both;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.m-auto {
+    margin: 0 auto;
+}

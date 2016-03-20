@@ -1,0 +1,19 @@
+@media screen and (max-width: 600px), screen and (max-device-width: 600px) {
+    .image-list {
+        width: 200px;
+    }
+
+    .image-list > li {
+        float: left;
+    }
+}
+
+@media screen and (min-width: 600px), screen and (min-device-width: 600px) {
+    .image-list.mediafix > li.inline-block {
+        float: left;
+    }
+
+    .image-list.mediafix > li.inline-block {
+        float: none;
+    }
+}

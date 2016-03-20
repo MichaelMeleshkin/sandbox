@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="./../style/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./../style/main.css" />
+        <link rel="stylesheet" type="text/css" href="./../style/z-index.css" />
+    </head>
+    <body>
+
+        <h4 class="bold m-bottom10">Simple example:</h4>
+        <div class="bc-yellow p75 inline-block m-left20">
+            <div class="relative bc-blue p75 inline-block">
+                z-index: auto
+                <div class="z-10 abs left0 top0 bc-green p25 inline-block">z: 10</div>
+                <div class="z-20 abs right0 top0 bc-red p25 inline-block">z: 20</div>
+            </div>
+            <div class="relative bc-blue p75 inline-block">
+                z-index: auto
+                <div class="z-30 abs left0 top0 bc-blue-l p25 inline-block">z: 30</div>
+                <div class="z-40 abs right0 top0 bc-blue-d p25 inline-block">z: 40</div>
+            </div>
+        </div>
+
+        <h4 class="bold m-bottom10 m-top20">Z-index for absolute:</h4>
+        <div class="bc-yellow p75 inline-block m-left20">
+            <div class="relative bc-blue p75 inline-block">
+                z-index: auto
+                <div class="child1 z-10 abs left0 top0 bc-green p25 inline-block">z: 10</div>
+                <div class="child2 z-20 abs right0 top0 bc-red p25 inline-block">z: 20</div>
+            </div>
+            <div class="relative bc-blue p75 inline-block">
+                z-index: auto
+                <div class="child3 z-30 abs left0 top0 bc-blue-l p25 inline-block">z: 30</div>
+                <div class="child4 z-40 abs right0 top0 bc-blue-d p25 inline-block">z: 40</div>
+            </div>
+        </div>
+
+        <div class="bc-yellow p75 m-top10 inline-block m-left20">
+            <div class="relative bc-blue p75 inline-block">
+                z-index: auto
+                <div class="child1 z-40 abs left0 top0 bc-green p25 inline-block">z: 40</div>
+                <div class="child2 z-30 abs right0 top0 bc-red p25 inline-block">z: 30</div>
+            </div>
+            <div class="relative bc-blue p75 inline-block">
+                z-index: auto
+                <div class="child3 z-20 abs left0 top0 bc-blue-l p25 inline-block">z: 20</div>
+                <div class="child4 z-10 abs right0 top0 bc-blue-d p25 inline-block">z: 10</div>
+            </div>
+        </div>
+
+        <h4 class="bold m-bottom10 m-top20">Z-index for relative:</h4>
+        <div class="bc-yellow p75 inline-block m-left20">
+            <div class="relative bc-blue p75 inline-block z-1">
+                z-index: 1
+                <div class="child1 z-10 abs left0 top0 bc-green p25 inline-block">z: 10</div>
+                <div class="child2 z-20 abs right0 top0 bc-red p25 inline-block">z: 20</div>
+            </div>
+            <div class="relative bc-blue p75 inline-block z-2">
+                z-index: 2
+                <div class="child3 z-30 abs left0 top0 bc-blue-l p25 inline-block">z: 30</div>
+                <div class="child4 z-40 abs right0 top0 bc-blue-d p25 inline-block">z: 40</div>
+            </div>
+        </div>
+        <br>
+        <div class="bc-yellow p75 inline-block m-top10 m-left20">
+            <div class="relative bc-blue p75 inline-block z-2">
+                z-index: 2
+                <div class="child1 z-10 abs left0 top0 bc-green p25 inline-block">z: 10</div>
+                <div class="child2 z-20 abs right0 top0 bc-red p25 inline-block">z: 20</div>
+            </div>
+            <div class="relative bc-blue p75 inline-block z-1">
+                z-index: 1
+                <div class="child3 z-30 abs left0 top0 bc-blue-l p25 inline-block">z: 30</div>
+                <div class="child4 z-40 abs right0 top0 bc-blue-d p25 inline-block">z: 40</div>
+            </div>
+        </div>
+        <br>
+        <h4 class="bold m-bottom10 m-top20">Z-index for absolute inside absolute:</h4>
+        <div class="relative last bc-yellow p75 inline-block m-left20">
+            <div class="abs left0 bc-blue p75 inline-block z-2">
+                z-index: 2
+                <div class="child1 z-10 abs left0 top0 bc-green p25 inline-block">z: 10</div>
+                <div class="child2 z-20 abs right0 top0 bc-red p25 inline-block">z: 20</div>
+            </div>
+            <div class="abs right0 bc-gray p75 inline-block">
+                z-index: auto
+                <div class="child3 z-30 abs left0 top0 bc-blue-l p25 inline-block">z: 30</div>
+                <div class="child4 z-40 abs right0 top0 bc-blue-d p25 inline-block">z: 40</div>
+            </div>
+        </div>
+
+    </body>
+</html>

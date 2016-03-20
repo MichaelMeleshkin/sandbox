@@ -1,0 +1,55 @@
+.main-cont {
+    display: inline-block;
+}
+
+.cell {
+    box-sizing: border-box;
+    width: 100px;
+}
+
+.clear-cont {
+    width: 300px;
+}
+
+@media screen and (max-width: 600px), screen and (max-device-width: 600px) {
+    .cell {
+        width: 300px;
+        box-sizing: content-box;
+    }
+
+    .clear-cont {
+        width: 306px;
+    }
+
+    .left,
+    .right {
+        float: none;
+    }
+
+    .example3 {
+        width: 300px;
+    }
+
+    .example3 .cell {
+        box-sizing: border-box;
+        width: 150px;
+    }
+
+    .example3 .cell.border {
+        border-width: 3px;
+    }
+
+    .example3 .left {
+        float: left;
+    }
+
+    .example3 .right {
+        float: left;
+    }
+
+    .example3 .wrap {
+        display: inline;
+        float: none;
+        border: none;
+    }
+}

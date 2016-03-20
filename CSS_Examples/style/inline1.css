@@ -1,0 +1,47 @@
+.inline-lists li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inline-lists .inline1000,
+.inline-lists .inline600 {
+    display: inline;
+}
+
+.inline-lists [class*="bc-"] {
+    float: left;
+    padding: 20px 48px;
+    margin: 2px;
+}
+
+@media screen and (max-width: 1000px), screen and (max-device-width: 1000px) {
+    .inline-lists .inline1000 {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .inline-lists [class*="bc-green"],
+    .inline-lists .w200 {
+        padding: 20px 98px;
+    }
+
+    .inline-lists [class*="bc-yellow"] {
+        padding: 20px 73px;
+    }
+}
+
+@media screen and (max-width: 600px), screen and (max-device-width: 600px) {
+    .inline-lists .inline600 {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .inline-lists .w200 {
+        width: auto;
+    }
+
+    .inline-lists [class*="bc-yellow"],
+    .inline-lists [class*="bc-blue"] {
+        padding: 20px 98px;
+    }
+}

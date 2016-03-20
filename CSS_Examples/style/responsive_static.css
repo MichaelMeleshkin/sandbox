@@ -1,0 +1,84 @@
+.abs {
+    position: relative;
+    margin-top: 10px;
+}
+
+.abs [class*='bc'] {
+    padding: 20px;
+    margin: 2px;
+}
+
+.abs > li.absolute {
+    position: absolute;
+    left: 176px;
+    top: 0;
+    right: 352px;
+}
+
+.abs.ex2 > li.absolute > .w50 {
+    width: 50%;
+    padding: 0 2px;
+    box-sizing: border-box;
+}
+
+.abs.ex2 > li.absolute > .w50 > * {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.abs.ex3 .wrap {
+    position: absolute;
+    left: 50%;
+    width: 176px;
+}
+
+.abs.ex3 > li.absolute > .w50:first-child + * {
+    position: absolute;
+    right: -176px;
+}
+
+@media screen and (max-width: 638px), screen and (max-device-width: 638px) {
+    .abs.ex1 > li {
+        float: left;
+    }
+
+    .abs.ex1 > li.absolute {
+        position: static;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 682px), screen and (max-device-width: 682px) {
+    .abs.ex2 > li {
+        float: left;
+    }
+
+    .abs.ex2 > li.absolute {
+        position: static;
+        float: left;
+        clear: none;
+    }
+
+    .abs.ex2 > li.absolute > .w50 {
+        padding: 0;
+        margin: 2px;
+        width: auto;
+    }
+
+    .abs.ex2 > li.absolute > .w50 > * {
+        padding: 20px;
+        margin: 0;
+        width: auto;
+    }
+
+    .abs.ex3 .wrap {
+        position: static;
+        width: auto;
+    }
+
+    .abs.ex3 > li.absolute > .w50:first-child + * {
+        position: static;
+    }
+}

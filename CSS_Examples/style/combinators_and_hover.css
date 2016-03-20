@@ -1,0 +1,14 @@
+/*From right to left*/
+.successively-right-to-left:hover > li {
+    background-color: paleturquoise;
+}
+
+.successively-right-to-left > li:hover ~ li {
+    background-color: transparent;
+}
+
+/*From left to right*/
+.successively-left-to-right > li:hover,
+.successively-left-to-right > li:hover ~ li {
+    background-color: paleturquoise;
+}

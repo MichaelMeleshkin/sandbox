@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="./../style/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./../style/main.css" />
+        <link rel="stylesheet" type="text/css" href="./../style/combinators_and_hover.css" />
+    </head>
+    <body>
+
+        <h4 class="bold">Component selectors. Combinators. Hover:</h4>
+        <h6 class="italic m-bottom10">...from right to left:</h6>
+        <ul class="successively-left-to-right table bc-yellow m-left20 p10 font-size0 m-bottom10">
+            <li class="table-cell top p10">
+                <img class="middle" src="http://lorempixel.com/50/50/" alt="lorempixel.com">
+            </li>
+            <li class="table-cell middle p10">Fusce</li>
+            <li class="table-cell middle p10">
+                <img class="middle" src="http://lorempixel.com/100/100/" alt="lorempixel.com">
+            </li>
+            <li class="table-cell middle w200 p10">
+                Ut ac velit interdum metus ultricies dapibus sit amet quis arcu.
+                Pellentesque iaculis mi vel lacus hendrerit, vitae lobortis enim tincidunt.
+                Integer tempor semper magna, et molestie magna imperdiet eu.
+                Sed varius porttitor augue a lacinia.
+                Integer dignissim ipsum purus, eu volutpat ex accumsan tempus.
+            </li>
+            <li class="table-cell middle p10">
+                <img class="middle" src="http://lorempixel.com/75/150/" alt="lorempixel.com">
+            </li>
+            <li class="table-cell middle w200 p10">
+                Mauris non ante condimentum, rhoncus arcu eu, aliquet nisl.
+                Nulla egestas mi ac efficitur volutpat. Vivamus ut urna ut magna interdum condimentum in id nunc.
+                Aliquam eleifend metus eget sem placerat sollicitudin.
+            </li>
+        </ul>
+
+        <h6 class="italic m-bottom10">...from left to right (float: right):</h6>
+        <ul class="successively-left-to-right table bc-yellow m-left20 p10 font-size0 m-bottom10 clearfix">
+            <li class="table-cell middle w200 p10 right">
+                Mauris non ante condimentum, rhoncus arcu eu, aliquet nisl.
+                Nulla egestas mi ac efficitur volutpat. Vivamus ut urna ut magna interdum condimentum in id nunc.
+                Aliquam eleifend metus eget sem placerat sollicitudin.
+            </li>
+            <li class="table-cell middle p10 right">
+                <img class="middle" src="http://lorempixel.com/75/150/" alt="lorempixel.com">
+            </li>
+            <li class="table-cell middle w200 p10 right">
+                Ut ac velit interdum metus ultricies dapibus sit amet quis arcu.
+                Pellentesque iaculis mi vel lacus hendrerit, vitae lobortis enim tincidunt.
+                Integer tempor semper magna, et molestie magna imperdiet eu.
+                Sed varius porttitor augue a lacinia.
+                Integer dignissim ipsum purus, eu volutpat ex accumsan tempus.
+            </li>
+            <li class="table-cell middle p10 right">
+                <img class="middle" src="http://lorempixel.com/100/100/" alt="lorempixel.com">
+            </li>
+            <li class="table-cell middle p10 right">Fusce</li>
+            <li class="table-cell top p10 right">
+                <img class="middle" src="http://lorempixel.com/50/50/" alt="lorempixel.com">
+            </li>
+        </ul>
+
+        <h6 class="italic m-bottom10">...from left to right (.parent:hover):</h6>
+        <ul class="successively-right-to-left table bc-yellow m-left20 p10 font-size0 m-bottom10 clearfix">
+            <li class="table-cell top p10">
+                <img class="middle" src="http://lorempixel.com/50/50/" alt="lorempixel.com">
+            </li>
+            <li class="table-cell middle p10">Fusce</li>
+            <li class="table-cell middle p10">
+                <img class="middle" src="http://lorempixel.com/100/100/" alt="lorempixel.com">
+            </li>
+            <li class="table-cell middle w200 p10">
+                Ut ac velit interdum metus ultricies dapibus sit amet quis arcu.
+                Pellentesque iaculis mi vel lacus hendrerit, vitae lobortis enim tincidunt.
+                Integer tempor semper magna, et molestie magna imperdiet eu.
+                Sed varius porttitor augue a lacinia.
+                Integer dignissim ipsum purus, eu volutpat ex accumsan tempus.
+            </li>
+            <li class="table-cell middle p10">
+                <img class="middle" src="http://lorempixel.com/75/150/" alt="lorempixel.com">
+            </li>
+            <li class="table-cell middle w200 p10">
+                Mauris non ante condimentum, rhoncus arcu eu, aliquet nisl.
+                Nulla egestas mi ac efficitur volutpat. Vivamus ut urna ut magna interdum condimentum in id nunc.
+                Aliquam eleifend metus eget sem placerat sollicitudin.
+            </li>
+        </ul>
+
+        <ul class="successively-right-to-left table bc-yellow m-left20 font-size0 m-bottom10">
+            <li class="table-cell top p10">
+                <img class="middle" src="http://lorempixel.com/50/50/" alt="lorempixel.com">
+            </li>
+            <li class="table-cell middle p10">Fusce</li>
+            <li class="table-cell middle p10">
+                <img class="middle" src="http://lorempixel.com/100/100/" alt="lorempixel.com">
+            </li>
+            <li class="table-cell middle w200 p10">
+                Ut ac velit interdum metus ultricies dapibus sit amet quis arcu.
+                Pellentesque iaculis mi vel lacus hendrerit, vitae lobortis enim tincidunt.
+                Integer tempor semper magna, et molestie magna imperdiet eu.
+                Sed varius porttitor augue a lacinia.
+                Integer dignissim ipsum purus, eu volutpat ex accumsan tempus.
+            </li>
+            <li class="table-cell middle p10">
+                <img class="middle" src="http://lorempixel.com/75/150/" alt="lorempixel.com">
+            </li>
+            <li class="table-cell middle w200 p10">
+                Mauris non ante condimentum, rhoncus arcu eu, aliquet nisl.
+                Nulla egestas mi ac efficitur volutpat. Vivamus ut urna ut magna interdum condimentum in id nunc.
+                Aliquam eleifend metus eget sem placerat sollicitudin.
+            </li>
+        </ul>
+
+        <h6 class="italic m-bottom10">...from bottom to top:</h6>
+        <ul class="successively-left-to-right w200 bc-yellow m-left20 p10 font-size0 m-bottom10">
+            <li class="top p10">
+                <img class="middle" src="http://lorempixel.com/50/50/" alt="lorempixel.com">
+            </li>
+            <li class="middle p10">Fusce</li>
+            <li class="middle p10">
+                <img class="middle" src="http://lorempixel.com/100/100/" alt="lorempixel.com">
+            </li>
+            <li class="middle p10">
+                Ut ac velit interdum metus ultricies dapibus sit amet quis arcu.
+                Pellentesque iaculis mi vel lacus hendrerit, vitae lobortis enim tincidunt.
+                Integer tempor semper magna, et molestie magna imperdiet eu.
+                Sed varius porttitor augue a lacinia.
+                Integer dignissim ipsum purus, eu volutpat ex accumsan tempus.
+            </li>
+            <li class="middle p10">
+                <img class="middle" src="http://lorempixel.com/75/150/" alt="lorempixel.com">
+            </li>
+            <li class="middle p10">
+                Mauris non ante condimentum, rhoncus arcu eu, aliquet nisl.
+                Nulla egestas mi ac efficitur volutpat. Vivamus ut urna ut magna interdum condimentum in id nunc.
+                Aliquam eleifend metus eget sem placerat sollicitudin.
+            </li>
+        </ul>
+
+        <h6 class="italic m-bottom10">...from top to bottom (.parent:hover):</h6>
+        <ul class="successively-right-to-left w200 bc-yellow m-left20 p10 font-size0 m-bottom10 clearfix">
+            <li class="top p10">
+                <img class="middle" src="http://lorempixel.com/50/50/" alt="lorempixel.com">
+            </li>
+            <li class="middle p10">Fusce</li>
+            <li class="middle p10">
+                <img class="middle" src="http://lorempixel.com/100/100/" alt="lorempixel.com">
+            </li>
+            <li class="middle p10">
+                Ut ac velit interdum metus ultricies dapibus sit amet quis arcu.
+                Pellentesque iaculis mi vel lacus hendrerit, vitae lobortis enim tincidunt.
+                Integer tempor semper magna, et molestie magna imperdiet eu.
+                Sed varius porttitor augue a lacinia.
+                Integer dignissim ipsum purus, eu volutpat ex accumsan tempus.
+            </li>
+            <li class="middle p10">
+                <img class="middle" src="http://lorempixel.com/75/150/" alt="lorempixel.com">
+            </li>
+            <li class="middle p10">
+                Mauris non ante condimentum, rhoncus arcu eu, aliquet nisl.
+                Nulla egestas mi ac efficitur volutpat. Vivamus ut urna ut magna interdum condimentum in id nunc.
+                Aliquam eleifend metus eget sem placerat sollicitudin.
+            </li>
+        </ul>
+
+        <ul class="successively-right-to-left w200 bc-yellow m-left20 font-size0 m-bottom10">
+            <li class="top p10">
+                <img class="middle" src="http://lorempixel.com/50/50/" alt="lorempixel.com">
+            </li>
+            <li class="middle p10">Fusce</li>
+            <li class="middle p10">
+                <img class="middle" src="http://lorempixel.com/100/100/" alt="lorempixel.com">
+            </li>
+            <li class="middle p10">
+                Ut ac velit interdum metus ultricies dapibus sit amet quis arcu.
+                Pellentesque iaculis mi vel lacus hendrerit, vitae lobortis enim tincidunt.
+                Integer tempor semper magna, et molestie magna imperdiet eu.
+                Sed varius porttitor augue a lacinia.
+                Integer dignissim ipsum purus, eu volutpat ex accumsan tempus.
+            </li>
+            <li class="middle p10">
+                <img class="middle" src="http://lorempixel.com/75/150/" alt="lorempixel.com">
+            </li>
+            <li class="middle p10">
+                Mauris non ante condimentum, rhoncus arcu eu, aliquet nisl.
+                Nulla egestas mi ac efficitur volutpat. Vivamus ut urna ut magna interdum condimentum in id nunc.
+                Aliquam eleifend metus eget sem placerat sollicitudin.
+            </li>
+        </ul>
+    </body>
+</html>

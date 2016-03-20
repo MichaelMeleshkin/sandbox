@@ -1,0 +1,90 @@
+.tabs {
+    width: 600px;
+    font-size: 0;
+    color: #FFF;
+}
+
+.tabs .label,
+.tabs .list {
+    font-size: 16px;
+}
+
+.tabs .list {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+.tabs .label:focus {
+    background-color: #000;
+}
+
+.tabs .label {
+    position: relative;
+    z-index: 1;
+    width: 28%;
+    box-sizing: border-box;
+    border-radius: 40px 40px 0 0;
+    text-align: center;
+    margin-left: -4%;
+}
+
+.tabs .label.first {
+    margin-left: 0;
+}
+
+.tabs .label.first {
+    border-top-left-radius: 0;
+}
+
+.tabs .label.last {
+    border-top-right-radius: 0;
+}
+
+.tabs .list {
+    width: 100%;
+}
+
+.tabs .default {
+    display: block;
+}
+
+.tabs .label:focus ~ .default {
+    display: none;
+}
+
+@media screen and (max-width: 640px), screen and (max-device-width: 640px) {
+    .tabs {
+        width: 400px;
+    }
+
+    .tabs .default {
+        display: none;
+    }
+
+    .tabs .label,
+    .tabs .label.first,
+    .tabs .label.last {
+        margin-left: 0;
+        border-radius: 10px;
+        width: 100%;
+        background-color: #999;
+        color: #000;
+    }
+
+    .tabs .label:focus {
+        background-color: #999;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: none;
+    }
+
+    .overlap {
+        display: none;
+    }
+
+    .tabs .list:hover {
+        display: block;
+    }
+}

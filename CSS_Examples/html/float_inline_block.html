@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="./../style/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./../style/main.css" />
+        <link rel="stylesheet" type="text/css" href="./../style/float_inline_block.css" />
+    </head>
+    <body>
+        <h4 class="bold m-bottom10">Hybrid (float with inline-block):</h4>
+        <h6 class="italic m-bottom10">We have an issue:</h6>
+
+        <h6 class="bold m-bottom10 m-top20">Example 1:</h6>
+        <ul class="image-list font-size0 clearfix w600">
+            <li class="inline-block w400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum leo at gravida tristique. Integer egestas iaculis elit, in sollicitudin justo. Aenean lacinia nunc et mauris maximus, sit amet pellentesque dolor ultricies. Aenean volutpat porttitor nisl, quis mattis urna ultricies at.</li>
+            <li class="right"><img class="middle" src="http://lorempixel.com/200/200/" alt="lorempixel.com"></li>
+        </ul>
+
+        <h6 class="bold m-bottom10 m-top20">Example 2:</h6>
+        <ul class="image-list font-size0 clearfix w600">
+            <li class="right"><img src="http://placehold.it/100x100&text=1"/></li>
+            <li class="right"><img src="http://placehold.it/100x100&text=2"/></li>
+            <li class="inline-block"><img src="http://placehold.it/100x100&text=3"/></li>
+            <li class="inline-block"><img src="http://placehold.it/100x100&text=4"/></li>
+            <li class="left"><img src="http://placehold.it/100x100&text=5"/></li>
+            <li class="left"><img src="http://placehold.it/100x100&text=6"/></li>
+        </ul>
+
+        <h6 class="italic m-bottom10 m-top20">Issue has been fixed:</h6>
+
+        <h6 class="bold m-bottom10 m-top20">Example 1:</h6>
+        <ul class="image-list mediafix font-size0 clearfix w600">
+            <li class="inline-block w400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum leo at gravida tristique. Integer egestas iaculis elit, in sollicitudin justo. Aenean lacinia nunc et mauris maximus, sit amet pellentesque dolor ultricies. Aenean volutpat porttitor nisl, quis mattis urna ultricies at.</li>
+            <li class="right"><img class="middle" src="http://lorempixel.com/200/200/" alt="lorempixel.com"></li>
+        </ul>
+
+        <h6 class="bold m-bottom10 m-top20">Example 2:</h6>
+        <ul class="image-list mediafix font-size0 clearfix w600">
+            <li class="right"><img src="http://placehold.it/100x100&text=1"/></li>
+            <li class="right"><img src="http://placehold.it/100x100&text=2"/></li>
+            <li class="inline-block"><img src="http://placehold.it/100x100&text=3"/></li>
+            <li class="inline-block"><img src="http://placehold.it/100x100&text=4"/></li>
+            <li class="left"><img src="http://placehold.it/100x100&text=5"/></li>
+            <li class="left"><img src="http://placehold.it/100x100&text=6"/></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="./style/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./style/main.css" />
+        <link rel="stylesheet" type="text/css" href="./style/index.css" />
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <h1>CSS практикум</h1>
+            <h2>Margin and padding for inline, inline-block and block</h2>
+            <h4>Inline</h4>
+            <ul>
+                <li>Зачастую используется для стилизации текста (жирный, курсив, цвет шрифта и т.д.)</li>
+                <li>Верхние и нижние margin/padding не работают</li>
+                <li>С боковыми отступами можем получить не ожидаемый эффект</li>
+            </ul>
+            <h4>Inline-block</h4>
+            <ul>
+                <li>Поведение характерно для медиа-тегов (img, embed, object)</li>
+                <li>Всегда обтекает содержимое</li>
+                <li>Margin и padding работают ожидаемо</li>
+            </ul>
+            <h4>Blosk</h4>
+            <ul>
+                <li>Используется для разметки</li>
+                <li>Всегда занимает все свободное место по горизонтали у родителя (не всегда это 100% от ширины родителя)</li>
+                <li>У блочных элементов расположенных рядом друг с другом по вертикали наблюдается эффект схлопывания (когда отступы не суммируются, а объединяются между собой). Для отступов слева и справа схлопывание никогда не применяется.</li>
+                <li class="no-style">
+                    <h5>Схлопывание не срабатывает:</h5>
+                    <ul>
+                        <li>для элементов, у которых на стороне схлопывания задано свойство padding;</li>
+                        <li>для элементов, у которых на стороне схлопывания задана граница;</li>
+                        <li>на элементах с абсолютным позиционированием, т.е. таких, у которых position установлено как absolute;</li>
+                        <li>на плавающих элементах (для них свойство float задано как left или right);</li>
+                        <li>для строчных элементов;</li>
+                        <li>для '&#60;html&#62;'.</li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="./html/margin_padding.html">Пример</a>
+
+            <h2>Float и восстановление потока</h2>
+            <h4>Простые примеры использования float</h4>
+            <a href="./html/float.html">Пример</a>
+            <h4>Как float помогает в отзывчивой верстке</h4>
+            <p>
+                Основным преимуществом является то, что блоки можно перемещать и "тасовать" между собой, что является очень удобным
+                средством в адаптивной верстке. Например, HTML разметку можно продумать таким образом, чтобы максимально подготовить ее
+                для мобильного отображения, а позже, перемещать блоки для desktop отображение.
+            </p>
+            <a href="./html/float_responsive.html">Пример</a>
+            <h4>Восстановление потока</h4>
+            <p>
+                К недостаткам можно отнести то, что элемент со свойством float изымается с основного потока из-за этого можно получить
+                не корректное поведение других элементов. Чтобы не допустить этого, нужно восстановить поток:
+            </p>
+            <a href="./html/floatfix.html">Примеры:</a>
+            <ul>
+                <li>clearfix или clear</li>
+                <li>inline-block</li>
+                <li>float</li>
+                <li>overflow</li>
+                <li>table</li>
+                <li>height</li>
+            </ul>
+
+            <h2>Inline-block верстка - на грани с кроссбраузерностью</h2>
+            <p>
+                Зачем нужен inline-block, когда есть float для блочных элементов?
+                Как было сказано выше, float элементы изымаются из основного потока,
+                что не позволяет нам использовать ряд свойств, например, выровнять "флоатнутый" элемент по вертикале,
+                по отношению к другим элементам, не так и просто.
+            </p>
+            <a href="./html/inline_block.html">Inline-block</a>
+            <p>
+                С другой стороны у inline-block есть недостаток. При обычной разметки страницы между элементами со свойством
+                inline-block появляется пробел и это нормально, так как все же это отчасти строчный элемент.
+                Этот пробел начинает мешать, когда на счету каждый пиксель, мало того, этот пробел в разных браузерах имеет разную ширину.
+            </p>
+            <a href="./html/inline_block_table.html">Inline-block & spaces</a>
+            <h4>Vertical-align</h4>
+            <a href="./html/vertical_align.html">Vertical-align</a>
+
+            <h2>Inline-block и float</h2>
+            <a href="./html/float_inline_block.html">Float with inline-block</a>
+
+            <h2>table-header-group & table-footer-group</h2>
+            <p>
+                Есть еще способ переместить элементы не по горизонтали, а уже по вертикале. Опять же, нужно это бывает для воплощения
+                всех задумок дизайнера. НЕ рекомендую использовать этот метод, так как с ним могут быть трудности. Например, контейнер
+                для которого задано данное свойство игнорирует margin, padding, border, width (расталкивается по содержимому)...
+                В <a href="./html/tableGroup.html">примере</a> данные свойства были вынесены в отдельные контейнеры, что не повлияло на отображение.
+            </p>
+
+            <h2>Inline магия</h2>
+            <h4>Простой пример</h4>
+            <p>
+                Десктоп область намного больше чем мобильная. Для мобильного приходится придумывать что-то красивое и удобное для
+                просмотра скрытой менее важной информации, которая была отображена а десктоп версии. Пример показывает как можно
+                подготовить HTML для инициализации, например, jQuery accordion.
+            </p>
+            <a href="./html/inline_simple.html">Simple example</a>
+            <h4>Очевыдная польза</h4>
+            <a href="./html/inline.html">Next example</a>
+            <h4>Float сделает все сам</h4>
+            <a href="./html/inline_float.html">Float example</a>
+
+            <h2>Вещи которые желательно избегать</h2>
+            <ul>
+                <li>Использование !important</li>
+                <li>Статическая высота</li>
+                <li>Отрицательный маргин</li>
+                <li>Абсолютное позиционирование</li>
+            </ul>
+
+            <h2>Бордеры. Ячейки одной высоты.</h2>
+            <a href="./html/borders.html">Table-cell & margin- padding+</a>
+
+            <h2>Позиционирование и z-index</h2>
+            <h4>Резиновый контейнер со статическими элементами</h4>
+            <a href="./html/responsive_static.html">Static elements and responsive</a>
+            <h4>Делаем рамку для контента</h4>
+            <a href="./html/frame_for_textarea.html">Frame for text area</a>
+            <h4>Z-index</h4>
+            <a href="./html/zIndex.html">Z-index</a>
+
+            <h2>Выравнивание по горизонтали и вертикале</h2>
+            <a href="./html/alignment.html">Horizontal & Vertical alignment</a>
+            <h4>Justify</h4>
+            <a href="./html/justify.html">Justify examples</a>
+
+            <h2>Составные селекторы. Комбинаторы</h2>
+            <h4>Заглушка для уже пустой таблицы</h4>
+            <a href="./html/empty_list.html">List is empty. Example</a>
+            <h4>Аккордиеон</h4>
+            <a href="./html/customAccordion.html">CSS only Accordion</a>
+            <h4>Обычные табы</h4>
+            <a href="./html/customTabs.html">CSS only Tabs</a>
+            <h4>Выпадающий список со ссылками</h4>
+            <a href="./html/customDropList.html">CSS only DropList</a>
+
+            <h2>Другое</h2>
+            <h4>Ховерим последовательно с первого по последний и наоборот</h4>
+            <a href="./html/combinators_and_hover.html">Example</a>
+
+            <h2>Ссылки</h2>
+            <ul>
+                <li>
+                    <a href="http://habrahabr.ru/post/142486/">Подробно о свойстве float</a>
+                </li>
+                <li>
+                    <a href="http://habrahabr.ru/post/161581/">Inline-block как замена float</a>
+                </li>
+                <li>
+                    <a href="http://css-tricks.com/fighting-the-space-between-inline-block-elements/">Fighting the Space Between Inline Block Elements</a>
+                </li>
+                <li>
+                    <a href="http://ruseller.com/lessons.php?rub_id=2&id=1248">6 методов вертикального центрирования с помощью CSS</a>
+                </li>
+                <li>
+                    <a href="http://css-live.ru/articles-css/ravnomernoe-vyravnivanie-blokov-po-shirine.html">Равномерное выравнивание  блоков по ширине</a>
+                </li>
+                <li>
+                    <a href="http://xiper.net/learn/css/selectors/combinators">Составные селекторы. Комбинаторы</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
